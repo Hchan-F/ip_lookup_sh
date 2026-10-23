@@ -20,3 +20,28 @@ Prérequis
 * Un accès à un serveur DNS.
 
 Exécution
+chmod +x ip_lookup.sh
+./ip_lookup.sh
+Adapter le nom du fichier si nécessaire.
+
+Objectif pédagogique
+
+Ce projet a été réalisé dans le cadre de mon apprentissage de Bash et des réseaux informatiques.
+
+Notions travaillées :
+
+* Résolution DNS et enregistrements de type A
+* Variables et substitution de commande
+* Conditions et boucles Bash
+* Saisie utilisateur
+* Redirection de sortie vers un fichier journal
+
+Limites
+
+Ce script constitue un exercice pédagogique. Il ne gère pas l’ensemble des erreurs possibles lors d’une requête DNS et ne réalise pas de validation complète des noms de domaine.
+
+Améliorations envisagées
+
+* Ajout d’une option pour consulter l’historique des recherches.
+* Gestion plus détaillée des erreurs DNS.
+* Création d’un menu interactif.
