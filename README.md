@@ -1,20 +1,22 @@
-# IP Lookup Script (Bash)
+IP Lookup Script (Bash)
 
-Ce script Bash permet de :
-- Demander un nom de domaine à l’utilisateur
-- Résoudre l’adresse IP via la commande `dig`
-- Afficher l’IP et l’enregistrer dans un fichier `logs_ip.txt`
-- Boucler sur plusieurs noms de domaine selon l’entrée utilisateur
+Script Bash permettant d’effectuer des résolutions DNS et d’enregistrer les résultats dans un fichier journal.
 
-## 💡 Objectif pédagogique
+Fonctionnement
 
-Ce projet fait partie de mon apprentissage de Bash et de la logique réseau.
+Le script permet de :
 
-## ✅ Améliorations prévues
+* Saisir un nom de domaine.
+* Rechercher son adresse IPv4 à l’aide de dig.
+* Afficher l’adresse obtenue.
+* Enregistrer le domaine, l’adresse IPv4 et la date dans logs_ip.txt.
+* Effectuer plusieurs recherches successives grâce à une boucle interactive.
+* Signaler lorsqu’aucune adresse IPv4 n’est trouvée.
 
-- Suppression de la duplication dans le `if`
-- Ajout d’une option pour afficher les logs
-- Gestion d’erreur si l’IP est vide
-- Interface interactive en ligne de commande (menu)
+Prérequis
 
-## 📅 Prochain commit prévu : Revoir la logique de boucle (`break` vs variable booléenne) et suppression duplication `if` le **samedi 12 avril**
+* Un environnement Linux avec Bash.
+* L’utilitaire dig installé.
+* Un accès à un serveur DNS.
+
+Exécution
